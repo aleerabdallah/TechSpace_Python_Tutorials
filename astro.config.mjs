@@ -20,30 +20,21 @@ export default defineConfig({
 				},
 				{
 					label: 'Basic Concepts',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Basic Concepts', slug: 'Basic-Concepts/intro-to-python-syntax' },
-					]
+					autogenerate: { directory: 'basic-concepts' },
 				},
 				{
 					label: 'Intermediate Concepts',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Intermediate Concepts', slug: 'Intermediate-Concepts/introduction' },
-					],
+					autogenerate: { directory: 'reference' },
 				},
 				{
 					label: 'Advanced Concepts',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Advanced Concepts', slug: 'Advanced-Concepts/introduction' },
-					],
-				},
-
-				{
-					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+
+				// {
+				// 	label: 'Reference',
+				// 	autogenerate: { directory: 'reference' },
+				// },
 			],
 			customCss: ['./src/tailwind.css'],
 		}),
