@@ -19,6 +19,28 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Basic Concepts',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Basic Concepts', slug: 'Basic-Concepts/intro-to-python-syntax' },
+					]
+				},
+				{
+					label: 'Intermediate Concepts',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Intermediate Concepts', slug: 'Intermediate-Concepts/introduction' },
+					],
+				},
+				{
+					label: 'Advanced Concepts',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Advanced Concepts', slug: 'Advanced-Concepts/introduction' },
+					],
+				},
+
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
