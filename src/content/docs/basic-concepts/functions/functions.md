@@ -31,7 +31,7 @@ A function is a block of code that performs a specific task.
 
 1. Helps in breaking down complex task into smaller manageable sub tasks
 2. Makes our code reusable
-
+3. Make our code Modular and maintainable
 
 
 ## Types of functions
