@@ -3,7 +3,7 @@ title: Introduction to functions
 description: This is an Introduction to Python Syntax
 slug: functions
 sidebar:
-  order: 0
+  order: 4
 ---
 
 ## What is a function?
@@ -22,7 +22,7 @@ A function is a block of code that performs a specific task.
 1. Functions run when called 
 2. A function can return a result
 3. Functions can take inputs, process them, and return an output
-4. 
+
 
 
 
@@ -40,11 +40,12 @@ A function is a block of code that performs a specific task.
 
 1. Built-in functions:
 
-You've probably used some of Python built-in functions such as print(), input()
-Are pre-defined functions that are always made available to us needing no imports.
+   You've probably used some of Python built-in functions such as `print()`, `input()`
+   Are pre-defined functions that are always made available to us needing no imports.
 
 2. User-defined functions:
 
+   These functions are custom functions defined by programmers
 
 
 
