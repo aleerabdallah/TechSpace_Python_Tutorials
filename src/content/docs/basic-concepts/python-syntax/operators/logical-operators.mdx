@@ -33,6 +33,16 @@ There are three logical operators in Python
 #### Example 
 
 ```py 
+  >>> 
+  >>> 10 > 9 and 9 < 10
+  True 
+  >>>
+  >>> 20 > 10 and 10 < 20 and 10 > 9
+  True 
+  >>> 
+  >>> 2 > 4 and 4 < 6 and 6 < 8
+  False 
+  >>>
 
 ```
 
@@ -51,12 +61,20 @@ There are three logical operators in Python
 #### Example 
 
 ```py 
-
+  >>> 
+  >>> # Will return True only if at least one of the two is True: 10 > 8
+  >>> 10 > 8 or 8 < 10
+  True
+  >>> 
+  >>> # will return False because all are False
+  >>> 5 > 8 and 5 < 4
+  False 
+  >>> 
 ```
 
 ### `not` Logical operator 
 
-
+`not` Logical operator returns the oppsite boolean value of its operand. If the operand value is True the it will return False, else it will return True 
 
 |  x            |   not x    | 
 | :---          |    ---:    | 
@@ -66,5 +84,15 @@ There are three logical operators in Python
 #### Example 
 
 ```py 
-
+  >>> x = True 
+  >>> y = False
+  >>> 
+  >>> # 
+  >>> not x
+  False
+  >>> 
+  >>> # 
+  >>> not y 
+  True 
+  >>>
 ```
