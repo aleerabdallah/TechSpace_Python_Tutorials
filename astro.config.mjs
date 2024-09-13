@@ -15,7 +15,9 @@ export default defineConfig({
 					label: 'Introduction to Python',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'intro_to_python/example' },
+						{ label: 'Overview', slug: 'intro-to-python/overview' },
+						{ label: 'Introduction to Python', slug: 'intro-to-python/introduction'},
+						{label: 'Installation', slug: 'intro-to-python/installation'},
 					],
 				},
 				{
