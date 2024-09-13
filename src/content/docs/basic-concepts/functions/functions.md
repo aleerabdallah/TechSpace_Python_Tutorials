@@ -57,8 +57,8 @@ A function is a block of code that performs a specific task.
 
 ---
 
-Function definition is the process of specifying a step by step of performing a specific task.
-That is reusable, maintainable 
+Function definition is the process of specifying a step by step procedure of performing a specific task.
+That is reusable, and maintainable. 
 
 
 

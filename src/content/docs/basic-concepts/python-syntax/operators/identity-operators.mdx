@@ -5,3 +5,56 @@ slug: python-syntax/operators/identity-operators
 sidebar:
   order: 6
 ---
+
+
+## What are Identity Operators 
+
+Python Identity operators are used to check if two objects have the same identity or if they refer to the same memory location
+
+
+## Identity Operators in Python
+
+There are two Identity Operators in Python
+
+### `is` operator
+
+`is` Identity operator checks if two objects refers to the same memory location, then returns `True` if they do refer to same memory location else returns `False`
+
+#### Example: using `is` operator
+
+```py 
+  >>> a = 10 
+  >>> b = a 
+  >>>
+  >>> c = 1200 
+  >>>
+  >>> # the statement below will return True
+  >>> a is b 
+  True 
+  >>>
+  >>> # the statement below will return False 
+  >>> a is c 
+  False
+
+```
+
+### `is not` operator
+
+`is not` Identity operator exactly does the opposite by checking if two objects do not refer to the same memory location, then returns `True` if they do not refer to same memory location else returns `False`
+
+#### Example: using `is not` operator
+
+```py 
+  >>> x = 20
+  >>> y = x
+  >>>
+  >>> z = 12
+  >>>
+  >>> # 
+  >>> x is y 
+  True 
+  >>> 
+  >>> # 
+  >>> y is z 
+  False
+```

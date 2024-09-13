@@ -5,3 +5,94 @@ slug: python-syntax/operators/logical-operators
 sidebar:
   order: 4
 ---
+
+
+
+## What are Logical operators 
+
+Logical operators are operators that combines at least two expressions which returns either True or False when evaluated.
+
+
+
+## Logical Operators in Python 
+
+There are three logical operators in Python 
+
+### `and` Logical operator 
+
+`and` Logical operator will return `True` if all the expressions evaluate to `True`
+
+|  x       |     y    | x and y |
+| :---     |   :---:  |  ---:   |
+| False    |   False  |  False  |
+| False    |   True   |  False  |
+| True     |   False  |  False  |
+| True     |   True   |  True   |
+
+
+#### Example 
+
+```py 
+  >>> 
+  >>> 10 > 9 and 9 < 10
+  True 
+  >>>
+  >>> 20 > 10 and 10 < 20 and 10 > 9
+  True 
+  >>> 
+  >>> 2 > 4 and 4 < 6 and 6 < 8
+  False 
+  >>>
+
+```
+
+### `or` Logical operator 
+
+`or` Logical operator will return `True` if at least one of the expression evaluates to `True`, else it will return `False`
+
+|  x       |     y    | x or y |
+| :---     |   :---:  |  ---:   |
+| False    |   False  |  False  |
+| False    |   True   |  True   |
+| True     |   False  |  True   |
+| True     |   True   |  True   |
+
+
+#### Example 
+
+```py 
+  >>> 
+  >>> # Will return True only if at least one of the two is True: 10 > 8
+  >>> 10 > 8 or 8 < 10
+  True
+  >>> 
+  >>> # will return False because all are False
+  >>> 5 > 8 and 5 < 4
+  False 
+  >>> 
+```
+
+### `not` Logical operator 
+
+`not` Logical operator returns the oppsite boolean value of its operand. If the operand value is True the it will return False, else it will return True 
+
+|  x            |   not x    | 
+| :---          |    ---:    | 
+| False         |   True     | 
+| True          |   False    |
+
+#### Example 
+
+```py 
+  >>> x = True 
+  >>> y = False
+  >>> 
+  >>> # 
+  >>> not x
+  False
+  >>> 
+  >>> # 
+  >>> not y 
+  True 
+  >>>
+```
