@@ -3,12 +3,14 @@ title: Identity Operators
 description: This is an Introduction to Python Syntax
 slug: python-syntax/operators/identity-operators
 sidebar:
-  order: 6
+  order: 10
 ---
 
-## What are Identity Operators
+
+## What are Identity Operators 
 
 Python Identity operators are used to check if two objects have the same identity or if they refer to the same memory location
+
 
 ## Identity Operators in Python
 
@@ -20,19 +22,19 @@ There are two Identity Operators in Python
 
 #### Example: using `is` operator
 
-```py
-   a = 10
-   b = a
-
-   c = 1200
-
-   print(a is b)
-   # the statement below will return True
-   # output: True
-
-   print(a is c)
-   # the statement below will return False
-   # output: False
+```py 
+  >>> a = 10 
+  >>> b = a 
+  >>>
+  >>> c = 1200 
+  >>>
+  >>> # the statement below will return True
+  >>> a is b 
+  True 
+  >>>
+  >>> # the statement below will return False 
+  >>> a is c 
+  False
 
 ```
 
@@ -42,17 +44,17 @@ There are two Identity Operators in Python
 
 #### Example: using `is not` operator
 
-```py
-   x = 20
-   y = x
-
-   z = 12
-
-   print(x is y)
-   # the statement below will return True
-   # output: True
-
-   print(x is not z)
-   # the statement below will return False because x and y is z
-   # output: False
+```py 
+  >>> x = 20
+  >>> y = x
+  >>>
+  >>> z = 12
+  >>>
+  >>> # 
+  >>> x is y 
+  True 
+  >>> 
+  >>> # 
+  >>> y is z 
+  False
 ```
