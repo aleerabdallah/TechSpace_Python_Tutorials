@@ -1,0 +1,97 @@
+---
+title: Membership Operators
+description: This is an Introduction to Python Syntax
+slug: python-syntax/operators/membership-operators
+sidebar:
+  order: 9
+---
+
+
+## What are Membership Operators
+
+These operators are used to check if a given value is a member of a sequence and returns `True` if it is else it returns `False`
+
+
+
+## Membership Operators in Python
+
+There are only two membership operators in Python
+
+### `in` operator 
+
+`in` operator checks if the value is a member of a sequence, and then returns either `True` if it is a member of that given sequence else returns `False`
+
+Here's some examples
+
+In the following examples we'll be using interactive shell
+
+#### Example 
+
+```py 
+  
+  >>> name = "Python"
+  >>>
+  >>> # this expression will return True because y is a member in name
+  >>> "y" in name 
+  True
+  >>> 
+  >>> # the statement below is returning False because 'y' and 'Y' do not have the same value
+  >>> "Y" in name 
+  False
+  >>> 
+  >>> # this expression will return False because z is not a member in name
+  >>> "z" in name
+  False 
+  >>> 
+  
+
+
+
+```
+
+	
+
+>
+> **Warning:** When using membership operators with strings, know that `"y"` and `"Y"` do not have the same value, so trying to check if capital `"Y"` is in `name` where there is only small `"y"` will always return `False`
+>
+> **Note:** Also when cheking for the existence of sub-string within a sequence, the order matters
+>
+
+
+
+
+
+### `not in` operator
+
+`not in` operator exactly does the opposite by checking if the value is not a member of a sequence, and then returns either `True` if it is not a member of that given sequence else returns `False`
+
+Here's some examples
+
+#### Example 
+
+```py
+  
+  >>> greeting = "Hello, World"
+  >>> 
+  >>> # the statement below will return False
+  >>> "L" in greeting
+  False 
+  >>> 
+  >>> # the statement below will return True 
+  >>> "l" in greeting 
+  True 
+  >>>
+  >>> # the statment below will return True
+  >>> "ello" in greeting
+  True 
+  >>> 
+  >>> # the statment below will return False
+  >>> "Ello" in greeting 
+  False 
+  >>>
+
+
+
+```
+
+

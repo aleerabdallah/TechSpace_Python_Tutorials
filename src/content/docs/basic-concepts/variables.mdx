@@ -1,0 +1,95 @@
+---
+title: Variables
+description: This is an Introduction to Python Syntax
+slug: python-syntax/variables
+sidebar:
+  order: 2
+---
+
+
+## What is a variable?
+
+In programming a variable is often referred to as named storage location that stores a data or value.
+The data or value stored in a variable may change through out the program execution.
+
+
+## Variables data type
+
+A variable data type is a refers to the type of value or data a variable is storing.
+
+Variables data type in python are derived from the value they store, because Python is a dynamically-typed, meaning the variable data type is subject to change with respect to change of its value type.
+
+
+## Constants 
+
+A constant is a value or data which can be used but can't be modified during the program execution. It stores a fixed value unlike a variable whose value can be changed.
+
+It's value is meant to not be modified once assigned.
+
+### Defining a constant 
+
+When defining a constant, all the characters of the constant name should be in upper case.
+
+```py 
+  PI =  3.14 
+  MONTHS = 12
+```
+
+## Variable - Naming conventions:
+
+Variable naming conventions are a set of guidelines that helps in choosing a descriptive and meaningful names for variables. Which helps make the code more readable and maintainable if consistently adhered to.
+
++ variable name should be descriptive and meaningful
+
++ Do not use abriviations unless widely used (e.g., URL)
+
++ Use lowercase letters, underscores, and numbers (e.g., my_variable)
+
++ Avoid using special characters like $ and _ as the first character
+
+
++ if a variable name contains more than one word then join them using use underscore _ (e.g., my_seond_variable)
+
++ Constants are written in all uppercase (e.g., PI)
+
+#### Example 
+
+```py 
+  
+
+  # acceptable variable name 
+  department = "Computer Science"
+
+  # not acceptable SyntaxError: invalid decimal literal
+  3department = " " 
+
+
+```
+
+
+Things to know:
+
+1. A variable maybe referenced by several different identifiers.
+
+2. Assigning a value to a variable using one of identifiers will change the value that can be accessed through other identifiers.
+
+
+
+
+## Scope of a variable
+
+Scope of variable determines its accessibility within a program, in simple terms, it determines from where within your code you can use a variable.
+
+### Global-variable 
+
+Global variables have a global scope therefore they are accessible everywhere within your code. 
+
+
+### Local-variable
+
+Local variables have a local scope therefore they are only accessible within a function or block scope.
+
+
+
+
+
