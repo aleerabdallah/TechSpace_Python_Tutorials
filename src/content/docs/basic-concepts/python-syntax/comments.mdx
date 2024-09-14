@@ -6,7 +6,7 @@ sidebar:
   order: 1
 ---
 
-## Comments in Python 
+## Comments in Python
 
 Comments in Python or programming in general, are notes added to the source to explain what the code does, it’s purpose and logic. They are ignored by the Python interpreter, because they are only meant to clarify the code.
 
@@ -15,13 +15,11 @@ Comments in Python or programming in general, are notes added to the source to e
 1. Single-line comments
 2. Multi-line comments
 
-## Single-line comment 
+## Single-line comment
 
 Single line comments in python starts with a hash symbol (#) and continue until the end of the line
 
-### Example of a single-line comment
-
-```py 
+```py title="Example of a single-line comment"
 
   # this function will output: Hello, World
   print("Hello, World")
@@ -31,23 +29,19 @@ Single line comments in python starts with a hash symbol (#) and continue until 
 
 ```
 
-
 ## Multi-line comment
 
-Multi-line comments are comments that span to multiple lines 
+Multi-line comments are comments that span to multiple lines
 
 Python doesn't support multi-line comments out of the box so the recommended way is to use multiple `#` to write multi-line comments
 
-### Example of a multi-line comment
-
-```py 
-  #
-
+```py title="Example of a multi-line comment"
+  # this function will output: Hello, World
+  # this function will be ignored because everything after `#` is a comment
 
   def function_name():
       pass
 ```
-
 
 ## Documentation String
 
@@ -56,43 +50,31 @@ Documentation string in Python are used to clarify the functionality, usage, and
 Docstrings are written using either triple single quotes `'''` or triple double quotes `"""`
 and they should be the first statement after the definition of the entity they document.
 
-
-
-
-
 ### Accessing Documentation String
 
 Sometimes you might want to know what a particular function does, especially some built-in functions so it easier to access their docstring using the following syntax:
 
-#### Example: using `__doc__` attribute 
+```py title="Example of accessing docstring"
+print(sum.**doc**)
 
-```py 
-  print(sum.__doc__)
 ```
 
-#### Example: using `help()` built-in function
+```py title="Example of using help() built-in function"
+print(help(sum))
 
-```py 
-  print(help(sum))
 ```
-
-
-### Example:
 
 In this example, we are a documenting a function called `display_info`
 
-```py 
-  
+```py title="Example of documenting a function"
+
   def display_info(name, age):
       """Display's person's information
 
       :arguments:
-          :name str, name should be a string 
+          :name str, name should be a string
           :age
       """
       print(f"Name: {name}")
       print(f"Age: {age}")
 ```
-
-
-

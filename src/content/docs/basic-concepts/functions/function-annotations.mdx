@@ -3,41 +3,33 @@ title: Function Annotations
 description: This is an Introduction to Python Syntax
 slug: functions/function-annotations
 sidebar:
-   order: 4
+  order: 4
 ---
 
+import { Aside } from "@astrojs/starlight/components";
 
 ## Function Annotations
 
 In Python function annotations helps us to attach metadata to function parameters and return values, add
 
-
->
->
-> A syntax for adding arbitrary metadata annotations to Python functions
-> 
-> Introduced in PEP 3107
->
->
+<Aside>
+  A syntax for adding arbitrary metadata annotations to Python functions <br />
+  Introduced in PEP 3107
+</Aside>
 
 IDEs and libraries could use annotations to indicate the function's expected input and return types.
-
-
 
 ## function annotations syntax
 
 We use the following syntax to annotate function parameters and return value.
 By adding a color (:) after a parameter and an arrow (->) for return types
 
-
 ```py
   def function_name(parameter: annotation) -> return_annotation:
       pass
 ```
 
-
 ## Annotating functions parameters
-
 
 ```py
   def add(a: int, b: int):
@@ -48,8 +40,7 @@ In this example:
 
 The parameters `a` and `b` are annotated with `int`, giving us hints that they should be integers
 
-
-## Annotating functions return value 
+## Annotating functions return value
 
 ```py
   def add(a: int, b: int) -> int:
@@ -58,14 +49,13 @@ The parameters `a` and `b` are annotated with `int`, giving us hints that they s
 
 In this example:
 
-+ The parameters `a` and `b` are annotated with `int`, giving us hints that they should be integers
+- The parameters `a` and `b` are annotated with `int`, giving us hints that they should be integers
 
-+ The return type is annotated with int
-
+- The return type is annotated with int
 
 ## Function annotations with default arguments
 
-```py 
+```py
   def add(a: int = 10, b: int = 20) -> int:
       return a + b
 
