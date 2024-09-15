@@ -1,0 +1,69 @@
+---
+title: Ternary Operator in Python
+description: The ternary operator in Python is a shorthand way of writing an if-else statement in a single line. It is useful when you want to assign a value based on a condition, without writing a full if-else block. The ternary operator helps make code more concise and readable in simple cases.
+slug: control-flow/ternary-operator
+sidebar:
+  order: 4
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+The **ternary operator** in Python is a shorthand way of writing an `if-else` statement in a single line. It is useful when you want to assign a value based on a condition, without writing a full `if-else` block. The ternary operator helps make code more concise and readable in simple cases.
+
+### Syntax of the Ternary Operator
+
+The basic syntax of the ternary operator in Python is:
+
+```py title="Syntax of Ternary Operator"
+value_if_true if condition else value_if_false
+```
+
+- condition: The condition that is being evaluated.
+- value_if_true: The value that will be returned if the condition is True.
+- value_if_false: The value that will be returned if the condition is False.
+
+### Example 1: Simple Ternary Operation
+
+Let’s check if a number is even or odd using the ternary operator:
+
+```py title="Simple Ternary Operation"
+number = 10
+
+result = "Even" if number % 2 == 0 else "Odd"
+print(result)
+```
+
+#### Explanation:
+
+- The condition number % 2 == 0 checks if the number is even.
+- If the condition is True, "Even" is assigned to the variable result; otherwise, "Odd" is assigned.
+
+### Example 2: Assigning Values Based on Condition
+
+You can also use the ternary operator to assign values to variables:
+
+```py title="Assigning Values Based on Condition"
+age = 20
+
+status = "Adult" if age >= 18 else "Minor"
+print(status)
+```
+
+### When to Use the Ternary Operator
+
+The ternary operator is best used for simple conditions where you can express the logic clearly in one line. For more complex conditions, stick with regular if-else statements for readability.
+
+### Exercise Time
+
+<Steps>
+  <ol>
+    <li>
+       Write a Python program that checks if a number is positive, negative, or zero using a ternary operator.
+    </li>
+
+    <li>
+     A store gives a discount only if a customer spends $100 or more. Use a ternary operator to determine whether a customer is eligible for a discount.
+    </li>
+
+</ol>
+</Steps>
