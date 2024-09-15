@@ -1,0 +1,119 @@
+---
+title: Elif Statement in Python
+description: The elif statement (short for "else if") is used to check multiple conditions in sequence. It allows you to handle more than two possible outcomes in your control flow. If the first condition is False, the elif statement checks another condition, and if this condition is True, the associated block of code will run.
+slug: control-flow/elif-statement
+sidebar:
+  order: 2
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+The elif statement `(short for "else if")` is used to check multiple conditions in sequence. It allows you to handle more than two possible outcomes in your control flow. If the first condition is `False`, the `elif` statement checks another condition, and if this condition is `True`, the associated block of code will run.
+
+Using `elif` makes your code cleaner by avoiding excessive nesting of `if` statements.
+
+### Syntax of elif
+
+```py title="Syntax of elif"
+if condition1:
+    # Block of code to execute if condition1 is True
+elif condition2:
+    # Block of code to execute if condition1 is False but condition2 is True
+```
+
+You can have as many elif statements as needed, and you can also combine if, elif, and else to handle different situations.
+
+### Example 1: Grading System
+
+Let’s create a program that assigns a letter grade based on a student’s score:
+
+```py title="Grading System"
+score = 85
+
+if score >= 90:
+    print("You got an A!")
+elif score >= 80:
+    print("You got a B!")
+elif score >= 70:
+    print("You got a C!")
+elif score >= 60:
+    print("You got a D!")
+else:
+    print("You got an F!")
+```
+
+#### Explanation:
+
+- If the score is greater than or equal to 90, the program prints "You got an A!" and stops checking further conditions.
+- If the score is less than 90 but greater than or equal to 80, it prints "You got a B!" and stops.
+- This process continues until the program finds a condition that is True, or defaults to the else block if none of the conditions match.
+
+```py title="Output for score = 85"
+You got a B!
+```
+
+```py title="Output for score = 72"
+You got a C!
+```
+
+### Example 2: Categorizing Age Groups
+
+Let's categorize people based on their age:
+
+```py title="Categorizing Age Groups"
+age = 45
+
+if age < 13:
+    print("You are a child.")
+elif age < 20:
+    print("You are a teenager.")
+elif age < 65:
+    print("You are an adult.")
+else:
+    print("You are a senior.")
+```
+
+```py title="Output for age = 45"
+You are an adult.
+```
+
+### Complex Conditions with elif
+
+You can use comparison and logical operators (and, or, not) in elif statements to check more complex conditions.
+
+```py title="Complex Conditions with elif"
+temperature = 32
+is_raining = True
+
+if temperature > 30 and is_raining:
+    print("It's a hot and rainy day.")
+elif temperature > 30 and not is_raining:
+    print("It's a hot and dry day.")
+elif temperature <= 30 and is_raining:
+    print("It's a cool and rainy day.")
+else:
+    print("It's a cool and dry day.")
+```
+
+### Exercise: elif Statements
+
+<Steps>
+  <ol>
+    <li>
+       Write a program that asks the user for a number and then prints whether the number is:
+
+        - Positive
+        - Negative
+        - Zero
+    </li>
+
+    <li>
+       Create a program that asks for a person's age and prints which type of movies they are allowed to watch:
+
+        - Under 13: "G-rated"
+        - 13 to 17: "PG-13"
+        - 18 and above: "R-rated"
+    </li>
+
+</ol>
+</Steps>

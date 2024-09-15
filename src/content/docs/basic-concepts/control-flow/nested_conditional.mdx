@@ -1,0 +1,102 @@
+---
+title: Nested Conditional Statements in Python
+description: In Python, a nested conditional is when one if statement is placed inside another if statement. This allows for more complex decision-making processes, where a condition is only checked if a previous condition was satisfied. Nested conditionals can be powerful but should be used with caution, as they can make the code harder to read and maintain.
+slug: control-flow/nested-conditional
+sidebar:
+  order: 3
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+In Python, a nested conditional is when one `if` statement is placed inside another `if` statement. This allows for more complex decision-making processes, where a condition is only checked if a previous condition was satisfied. Nested conditionals can be powerful but should be used with caution, as they can make the code harder to read and maintain.
+
+### Syntax:
+
+```py title="Syntax of Nested Conditional"
+if condition1:
+    if condition2:
+        # Block of code if both condition1 and condition2 are True
+    else:
+        # Block of code if condition1 is True but condition2 is False
+else:
+    # Block of code if condition1 is False
+```
+
+#### How It Works:
+
+- condition1 is evaluated first.
+- If condition1 is True, the program enters the inner block and evaluates condition2.
+- If condition2 is also True, the corresponding code is executed.
+- If condition1 is False, the program skips the entire block of code and moves to the else block (if present).
+
+### Example 1: Voting Eligibility and Age Restriction
+
+Let’s take an example where we check if a person is eligible to vote, and if they are eligible, we check if they are old enough to drink alcohol.
+
+```py title="Voting Eligibility and Age Restriction"
+age = 20
+
+if age >= 18:
+    print("You are eligible to vote.")
+    if age >= 21:
+        print("You are also old enough to drink alcohol.")
+    else:
+        print("But you are not old enough to drink alcohol.")
+else:
+    print("You are too young to vote.")
+```
+
+#### Explanation:
+
+- The outer if checks if the person is 18 or older.
+- If age >= 18 is True, the program enters the nested if block and checks if the person is oldenough to drink.
+- If the person is 21 or older, the message about drinking alcohol is printed; otherwise, the else statement within the nested block handles the case where they can't drink alcohol.
+
+### Example 2: Number Category
+
+In this example, we will check if a number is `positive`, `negative`, or `zero`, and if it’s positive, we'll further categorize it as `small` or `large`.
+
+```py title="Number Category"
+number = 50
+
+if number > 0:
+    print("The number is positive.")
+    if number < 100:
+        print("It’s a small number.")
+    else:
+        print("It’s a large number.")
+elif number == 0:
+    print("The number is zero.")
+else:
+    print("The number is negative.")
+```
+
+#### Explanation:
+
+- The outer if checks if the number is positive.
+- If it is positive, we then check whether it’s smaller than 100 or larger.
+- If the number isn’t positive, we use an elif to check if it is zero, and the else block handles the case where the number is negative.
+
+### Exercise: Nested Conditional Statements
+
+<Steps>
+  <ol>
+    <li>
+       Write a program that takes the temperature as input and does the following:
+
+        - If the temperature is below 0, print "It’s freezing."
+        - If the temperature is above 0, check if it’s above 30:
+          - If it’s above 30, print "It’s hot."
+          - Otherwise, print "It’s a mild day."
+    </li>
+
+    <li>
+       Write a program that calculates the discount based on the total purchase:
+
+        - If the purchase amount is greater than $100, apply a 10% discount.
+        - If the purchase amount is greater than $200, apply an additional 5% discount (making it 15% total).
+        - If the purchase is less than $100, no discount is applied.
+    </li>
+
+</ol>
+</Steps>
