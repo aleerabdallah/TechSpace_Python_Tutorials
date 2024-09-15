@@ -1,0 +1,45 @@
+---
+title: Accessing Tuples
+description: A simple guide through.
+slug: data-types/tuples/accessing-tuples
+---
+
+
+## How to access the elements of a tuple
+
+The items of a tuple can be accessed through using the index number inside a square bracket.
+
+
+### Indexing 
+
+#### Example
+
+```py title="using indexs to access the elements"
+  # Accessing an item at index 2 
+  animals = ("dog", "panther", "tiger")
+
+  print(animals[2]) # outputs: tiger
+  print(animals[0]) # outputs: dog
+  print(animals[1]) # outputs: panther
+
+```
+
+
+### Slicing
+
+Sometimes you might want to access a subset of the items or elements in a tuple that's when slicing comes in handy.
+
+#### Example 
+
+```py title="using slicing to access a subset of elements"
+  
+  colors = ("red", "orange", "yellow", "green", "blue")
+
+  print(colors)  # outputs: ("red", "orange", "yellow", "green", "blue")
+
+  
+  # returns a subset of colors starting from the color at index 2 (yellow)
+  print(colors[2:]) 
+
+
+```

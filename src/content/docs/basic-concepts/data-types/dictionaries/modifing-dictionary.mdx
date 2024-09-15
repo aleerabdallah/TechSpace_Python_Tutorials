@@ -1,0 +1,38 @@
+---
+title: Modifying a Dictionary
+description: A simple guide through.
+slug: data-types/modifying-dictionary
+---
+
+
+You can modify dictionaries by adding, changing, or removing key-value pairs:
+
+
+## Adding key-value pairs
+
+
+```py title=""
+  my_dict = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+
+# Adding a new key-value pair
+my_dict["email"] = "alice@example.com"
+print(my_dict)  # Output: {'name': 'Alice', 'age': 30, 'city': 'New York', 'email': 'alice@example.com'}
+```
+
+
+## Changing an existing value
+
+This example illustrates how to modify a value associated with a key. 
+
+```py title=""
+  my_dict["age"] = 31
+  print(my_dict)  # Output: {'name': 'Alice', 'age': 31, 'city': 'New York', 'email': 'alice@example.com'}
+```
+
+## Removing a key-value pair
+
+```py title=""
+  del my_dict["city"]
+  print(my_dict)  # Output: {'name': 'Alice', 'age': 31, 'email': 'alice@example.com'}
+```
+

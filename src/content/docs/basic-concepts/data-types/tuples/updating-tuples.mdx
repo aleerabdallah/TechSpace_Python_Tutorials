@@ -1,0 +1,22 @@
+---
+title: Updating Tuples
+description: A simple guide through.
+slug: data-types/tuples/updating-tuples
+---
+
+
+## Updating a tuple
+
+Tuple is an immutable data type, it's a state can not be changed after creation. After constructing a tuple you can't add into or remove an element from it.
+
+### Example 
+
+```py title="updating a tuple"
+  countries = ("England", "India", "China")
+  
+  # trying to update England with Argentina
+  countries[0] = "Argentina"
+
+  # Output: TypeError: tuple object does not support item assignment
+```
+

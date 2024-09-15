@@ -1,0 +1,60 @@
+---
+title: tuples
+description: A simple guide through.
+slug: data-types/tuples
+---
+
+## Tuple Data Type
+
+Tuple is a built-in immutable data type that is used to store a collection of data. It can be of the same or different data type. It's best suitable for storing a data that cannot change since it's immutable, unlike a list whose elements can be modified.
+
+
+## Creating a tuple 
+
+
+A tuple data type can be created using a comma separated-values placed within a parenthesis ().
+
+
+
+#### Example:
+
+```py title="creating a tuple"
+  # creating a tuple with different data type
+
+  student_info = (“Ben”, 21, 8500.0)
+
+  # Incorrect way of creating a tuple with one item
+  number = (2)
+
+  # Correct way of creating a tuple with one item 
+  price = (23,)
+
+
+
+```
+
+
+**Note**
+>
+> When creating a tuple with one item, we put a comma after that item.
+>
+
+ 
+
+## Other ways of creating a tuple 
+
+There are other ways of creating a tuple which we'll mention.
+
+### using `tuple()` constructor
+
+One of the built-in `tuple()` function is also used to create a tuple. It takes a sequence data type and constructs a tuple with it's items. If no argument is provided then it will construct an empty tuple.
+
+#### Example 
+
+```py title="using tuple() to create a tuple"
+  colors = ["red", "orange", "yellow"]
+  
+  tuple_colors = tuple(colors)
+  
+```
+

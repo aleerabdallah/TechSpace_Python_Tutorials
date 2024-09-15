@@ -1,0 +1,26 @@
+---
+title: Modifying Strings
+description: A simple guide through.
+slug: data-types/modifying-strings
+---
+
+
+
+## Strings: Immutable data type 
+
+Strings are immutable data type, meaning any attemp of modifying a string after it's has been created will returns a new string.
+
+
+## String concatenation 
+
+A string can not be modified after it has been created so string concatenation might seem like modifying a string but it's not, for when you concatenate two strings you get back a new string.
+
+```py title="example of string concatenation"
+  
+  greeting = "Hello"
+  
+  #concatenate Hello with World
+  greeting += " World"
+
+  print(greeting) #outputs: Hello World
+```

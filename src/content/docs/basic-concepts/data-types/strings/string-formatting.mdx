@@ -1,0 +1,39 @@
+---
+title: String Formatting
+description: A simple guide through.
+slug: data-types/string-formatting
+---
+
+
+
+
+### using f-string `f`
+
+f-string allows us to include expressions in strings.
+
+```py title="example of using f-string"
+  
+  name = "Jane"
+  
+  print(f"Hello {name}") # outputs: Hello Jane
+```
+
+
+### using `str.format()` method 
+
+format() string method helps in formatting strings with placholders
+
+```py title="example of using format() string method"
+  # using the above variable "name"
+
+  print("Hello {}".format(name))
+```
+
+### using percentage formatting `%`
+
+```py title="example of using percentage formatting"
+  
+  #using the above variable "name"
+
+  print("Hello %s " % (name))
+```
