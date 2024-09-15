@@ -4,13 +4,128 @@ description: An if statement in Python is used to execute a block of code only i
 slug: control-flow/if-statement
 ---
 
+import { Steps } from "@astrojs/starlight/components";
+
 An if statement in Python is used to execute a block of code only if a specified condition is true. It allows you to control the flow of your program by checking conditions and performing different actions based on the results.
 
-If Statements
-Else and Elif Statements
-Nested Conditionals
-Ternary Operator
-While Loops
-For Loops
-Break and Continue
-Exercise Time
+### Syntax of the if Statement
+
+Here’s the basic syntax of an if statement in Python:
+
+```py title="Syntax of if Statement"
+if condition:
+    # Block of code to execute if condition is True
+```
+
+- The keyword if is followed by a condition (or expression).
+- If the condition evaluates to True, the block of code underneath the if statement runs.
+- If the condition evaluates to False, the block is skipped, and the program continues to the next - statement after the if block.
+
+### Indentation in Python
+
+Python relies on indentation (typically 4 spaces) to define the blocks of code associated with control structures. This is different from many other programming languages that use curly braces `{}`. So, proper indentation is crucial in Python.
+
+### Checking a Simple Condition
+
+Let’s start with a simple example that checks if a number is positive.
+
+```py title="Checking a Simple Condition"
+number = 10
+if number > 0:
+    print("The number is positive.")
+```
+
+### Checking a Boolean Variable
+
+The condition in an if statement can also be a boolean value. Let's explore how it works.
+
+```py title="Checking a Boolean Variable"
+is_logged_in = True
+
+if is_logged_in:
+    print("Welcome back, user!")
+```
+
+### More Complex Conditions
+
+You can use comparison operators `(<, >, ==, etc.)` or logical operators `(and, or, not)` in the if condition.
+
+```py title="More Complex Conditions"
+temperature = 30
+
+if temperature > 20 and temperature < 35:
+    print("It's a warm day.")
+```
+
+### Common Pitfalls with if Statements
+
+<Steps>
+  <ol>
+    <li>
+         Forgetting Indentation
+        In Python, the code block after the if statement must be indented. Forgetting to indent will raise an error.
+
+        ```py title="Forgetting Indentation"
+        # Incorrect: Will raise an IndentationError
+
+        if number > 0:
+        print("The number is positive.") # This line should be indented
+        ```
+    </li>
+
+    <li>
+        Using Assignment `(=)` Instead of Comparison `(==)`
+
+        Another common mistake is using a single equals sign `(=)` instead of a double equals sign `(==)`. Remember, `=` is for assignment, while `==` is for comparison.
+
+        ```py
+        # Incorrect: Will not behave as expected
+
+        if number = 10: # Should be if number == 10
+        print("The number is 10.")
+        ```
+    </li>
+
+</ol>
+</Steps>
+
+### Nested If Statements
+
+You can place an if statement inside another if statement to check multiple conditions in sequence.
+
+```py title="Nested If Statements"
+age = 20
+
+if age >= 18:
+    if age < 21:
+        print("You are an adult but not old enough to drink alcohol.")
+
+```
+
+#### Explanation:
+
+The first if checks if the person is 18 or older.
+The second if inside the first one checks if the person is younger than 21.
+If both conditions are satisfied, the message will be printed.
+
+### Exercise: if Statements
+
+<Steps>
+  <ol>
+    <li>
+        Write a program that checks if a number entered by the user is even or odd.
+
+        Hint:<br/>
+        Use the modulo operator % to find the remainder of a division. <br/>
+        If the remainder of the number divided by 2 is 0, it’s even.
+    </li>
+
+    <li>
+        Create a program that takes the temperature as input and prints "It's freezing!" if the temperature is below 0.
+
+        Hint: <br/>
+        check if the temperature is less than 0.
+    </li>
+
+</ol>
+</Steps>
