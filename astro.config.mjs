@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [
     starlight({
-      favicon: "/src/assets/techspace.jpg",
+      favicon: "/favicon.png",
       title: "TechSpace",
       logo: {
         src: "/src/assets/techspaceTrans.png",
