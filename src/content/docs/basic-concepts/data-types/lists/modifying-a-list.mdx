@@ -1,0 +1,93 @@
+---
+title: Modifying A List
+description: A simple guide through.
+slug: data-types/lists/modifying-a-list
+sidebar:
+  order: 48
+---
+
+
+## Modifying a list in Python
+
+Lists are mutable data types meaning you can change the state of a list after it has been created. Adding items, removing items, or changing items. 
+
+
+## 1. Modifying a List Item
+
+## Changing a List item 
+### indexing 
+
+```py title="example of modifying a list item"
+  colors = ["red", "green", "blue"]
+
+  colors[1] = "white"
+
+```
+
+## 2. Adding a List item
+
+### using `append()` to add an item 
+
+```py title="example of adding an item using append()"
+  
+  # creating an empty list 
+  colors = []
+
+  # adding an element using append() method 
+  colors.append("red") 
+
+  print(colors) # output: ["red"]
+
+  
+```
+
+
+### using `insert()` method
+
+List `insert()` method takes two arguments:
+1. index: An index on which an item should be inserted
+2. item: An item to be inserted at that specific position
+
+**Note**:
+>
+> Insert an item at that particular index or position, if there's an element at that position then it pushes that element forward
+>
+
+```py title="using a insert() method"
+  
+  colors = ["red", "orange", "yellow"]
+  
+  # will insert green at the index or position of yellow and push it back
+  colors.insert(2, "green")
+
+```
+
+
+
+
+## 3. Removing a List item 
+
+
+### using `pop()` 
+
+`pop()` removes an item at the last position or index in the list.
+
+```py title="using pop() method to remove the last item"
+  fruits = ["apple", "orange", "grapes"]
+
+  fruits.pop()
+
+```
+
+### using `remove()` 
+
+`remove()` method removes a given list item from the list.
+
+```py title="removing a list item using remove()"
+  
+  fruits = ["apple", "orange", "grapes"]
+  
+  fruits.remove("orange")
+
+```
+

@@ -1,0 +1,49 @@
+---
+title: Iterating over tuples
+description: A simple guide through.
+slug: data-types/tuples/loop-tuples
+sidebar:
+  order: 55
+---
+
+
+## Looping over elements in a tuple 
+
+Tuple support looping through it's elements with `for loop` and also `while loop`. Let's see examples using both loops techniques.
+
+### Using for loop
+
+
+#### Example 
+
+Looping through tuples using a for loop without index
+
+```py title="looping over a tuple using for loop without index"
+  
+  for i in range(len(colors)):
+      print(colors[i])
+```
+
+#### Example 
+
+Looping through tuples using an index
+
+```py title="using for loop with a tuple"
+  
+  for i in range(len(colors)):
+      print(colors[i])
+```
+
+### Using while loop
+
+To loop through the elements of a tuple using while loop, you use indexs to access or visit each element, so knowning the length of a tuple is necessary. You can using `len()` built-in function to get the exact length
+
+#### Example 
+
+```py title="using while loop with a tuple"
+  
+  i = 0 
+
+  while i < len(tuple):
+     print(tuple[i])
+```

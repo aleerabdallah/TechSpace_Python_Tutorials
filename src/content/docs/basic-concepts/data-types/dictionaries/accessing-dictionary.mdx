@@ -1,0 +1,56 @@
+---
+title: Accessing Items in a Dictionary
+description: A simple guide through.
+slug: data-types/accessing-dictionary
+sidebar:
+  order: 59
+---
+
+
+
+## Accessing a Dictionary
+
+Data or values in a dictionary can be accessed through their corresponding keys.
+
+
+```py title="example of accessing values in a dictionary"
+  
+  info = {
+    "name": "Kevin",
+    "age": 11,
+  }
+
+  # prints any data associated with the following key
+  print(info["name"])
+
+  # prints a value associated with the following key
+  print(info["age"])
+```
+
+
+### using `get()` method 
+
+`get()` method returns a value corresponding to the given key if the key exists, it doesn't raised any error if the key doesn't exists. 
+
+```py title="example of using get()"
+  
+
+  laptop = {
+    "model": "HP 360 probook",
+    "price": 250.9
+  }
+
+  # prints the value associated with model key 
+  print(laptop.get("model"))
+
+  # prints the value associated with price key 
+  print(laptop.get("price"))
+
+  # this will raise a KeyError
+  print(laptop["ram"])
+
+  # returns nothing without raising any error
+  print(laptop.get("ram"))
+
+
+```

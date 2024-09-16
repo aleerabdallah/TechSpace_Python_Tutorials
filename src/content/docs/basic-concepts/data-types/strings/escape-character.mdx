@@ -1,0 +1,41 @@
+---
+title: Escape characters
+description: A simple guide through.
+slug: data-types/escape-characters
+sidebar:
+  order: 42
+---
+
+## String: Escape characters
+
+Escape characters are a set of characters that help you include special characters in strings.
+
+### single quotes or double quotes 
+
+```py title="example to include single or double quote"
+  
+  # this will raise a syntax error
+  message = 'Hy, how are you 'doing''
+
+  # to include '' quote around doing 
+  message = 'Hy, how are you \'doing\''
+
+  print(message) # outputs: "Hy, how are you 'doing' "
+
+```
+
+### including tab or newline 
+
+```py title="example of including a tab or newline"
+  
+  string1 = "Hello\tWorld!"
+  
+  # prints Hello with four spaces to the right before World
+  print(string1) # outputs: Hello    World!
+
+  respond = "I'm good \nHow about you"
+  print(respond) 
+```
+
+These are few examples of escape characters in Python.
+

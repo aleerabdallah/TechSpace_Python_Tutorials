@@ -1,0 +1,60 @@
+---
+title: Dictionaries
+description: A simple guide through.
+slug: data-types/dictionaries
+sidebar:
+  order: 58
+---
+
+
+
+## Python Dictionaries
+
+Dictionary is a built-in data type that stores data in key:value pairs. It is mutable and with fast efficient data retrieval.
+
+### Dictionary has the following features:
+
+**1. Mutable:** Dictionaries are mutable, you can change, remove, and update key:pair items.
+
+**2. Key:Value pairs:** Each key is mapped to a value, keys should be of immutable data type, keys should also be unique.
+
+
+## Creating a dictionary 
+
+Dictionaries can be created in several ways such as using a comma-separated key:value pairs, let's cover each method.
+
+### Using a comma-separated key:value pairs
+
+A dictionary can be created using placing comma-separated key:value pair in a curly braces `{}`
+
+```py title="an example of creating a dictionary"
+  
+  book = {"title": "Python", "author": "Guido Von rossum"}
+
+  print(book) #output: {"title": "Python", "author": "Guido Von rossum"}
+```
+
+### Using a `dict()` built-in function
+
+#### Example 1: using a list of tuples
+
+```py title="creating a dictionary using a list of tuples"
+  
+  my_dict = dict([("one": 1), ("two", 2), ("three": 3)])
+
+  print(my_dict) # outputs: {"one": 1, "two": 2}
+
+
+```
+
+#### Example 2: using keyword arguments
+
+```py title="example of creating a dict using keyword arguments"
+  
+  my_dict = dict(name="kevin", age=11)
+  
+  print(my_dict) # outputs: {"name": "kevin", "age": 11}
+
+  
+```
+
