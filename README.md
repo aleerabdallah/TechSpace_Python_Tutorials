@@ -9,12 +9,3 @@ Welcome to the Python Crash Course developed by the TechSpace Team! This reposit
 ## Getting Started
 
 To get started with this documentation, follow these steps:
-
-If Statements
-Else and Elif Statements
-Nested Conditionals
-Ternary Operator
-While Loops
-For Loops
-Break and Continue
-Exercise Time

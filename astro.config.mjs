@@ -40,11 +40,10 @@ export default defineConfig({
           label: "Advanced Concepts",
           autogenerate: { directory: "reference" },
         },
-
-        // {
-        // 	label: 'Reference',
-        // 	autogenerate: { directory: 'reference' },
-        // },
+        {
+          label: "Live Classes",
+          autogenerate: { directory: "live_classes" },
+        },
       ],
       customCss: ["./src/tailwind.css"],
     }),
