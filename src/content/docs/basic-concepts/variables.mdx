@@ -6,12 +6,10 @@ sidebar:
   order: 3
 ---
 
-
 ## What is a variable?
 
 In programming a variable is often referred to as named storage location that stores a data or value.
 The data or value stored in a variable may change through out the program execution.
-
 
 ## Variables data type
 
@@ -19,19 +17,18 @@ A variable data type is a refers to the type of value or data a variable is stor
 
 Variables data type in python are derived from the value they store, because Python is a dynamically-typed, meaning the variable data type is subject to change with respect to change of its value type.
 
-
-## Constants 
+## Constants
 
 A constant is a value or data which can be used but can't be modified during the program execution. It stores a fixed value unlike a variable whose value can be changed.
 
 It's value is meant to not be modified once assigned.
 
-### Defining a constant 
+### Defining a constant
 
 When defining a constant, all the characters of the constant name should be in upper case.
 
-```py 
-  PI =  3.14 
+```py
+  PI =  3.14
   MONTHS = 12
 ```
 
@@ -39,33 +36,31 @@ When defining a constant, all the characters of the constant name should be in u
 
 Variable naming conventions are a set of guidelines that helps in choosing a descriptive and meaningful names for variables. Which helps make the code more readable and maintainable if consistently adhered to.
 
-+ variable name should be descriptive and meaningful
+- variable name should be descriptive and meaningful
 
-+ Do not use abriviations unless widely used (e.g., URL)
+- Do not use abriviations unless widely used (e.g., URL)
 
-+ Use lowercase letters, underscores, and numbers (e.g., my_variable)
+- Use lowercase letters, underscores, and numbers (e.g., my_variable)
 
-+ Avoid using special characters like $ and _ as the first character
+- Avoid using special characters like $ and \_ as the first character
+
+- if a variable name contains more than one word then join them using use underscore \_ (e.g., my_seond_variable)
+
+- Constants are written in all uppercase (e.g., PI)
+
+#### Example
+
+```py
 
 
-+ if a variable name contains more than one word then join them using use underscore _ (e.g., my_seond_variable)
-
-+ Constants are written in all uppercase (e.g., PI)
-
-#### Example 
-
-```py 
-  
-
-  # acceptable variable name 
+  # acceptable variable name
   department = "Computer Science"
 
   # not acceptable SyntaxError: invalid decimal literal
-  3department = " " 
+  3department = " "
 
 
 ```
-
 
 Things to know:
 
@@ -73,23 +68,53 @@ Things to know:
 
 2. Assigning a value to a variable using one of identifiers will change the value that can be accessed through other identifiers.
 
-
-
-
 ## Scope of a variable
 
 Scope of variable determines its accessibility within a program, in simple terms, it determines from where within your code you can use a variable.
 
-### Global-variable 
+### Global-variable
 
-Global variables have a global scope therefore they are accessible everywhere within your code. 
+Global variables have a global scope therefore they are accessible everywhere within your code.
 
+```py title="global variable"
+# Global variable
+name = "Alice"
+
+def greet():
+    # Accessing the global variable inside the function
+    print("Hello, " + name + "!")
+
+def change_name(new_name):
+    global name  # Declaring that we want to modify the global variable
+    name = new_name
+
+# Call the functions
+greet()  # Output: Hello, Alice!
+
+change_name("Bob")
+greet()  # Output: Hello, Bob!
+
+```
 
 ### Local-variable
 
 Local variables have a local scope therefore they are only accessible within a function or block scope.
 
+```py title="local variable"
+def greet():
+    # Local variable
+    name = "Alice"
+    print("Hello, " + name + "!")
 
+def change_name():
+    # This 'name' variable is local to this function and different from the one in greet()
+    name = "Bob"
+    print("Inside change_name, name is: " + name)
 
+# Call the functions
+greet()           # Output: Hello, Alice!
+change_name()     # Output: Inside change_name, name is: Bob
 
-
+# Trying to access the local variable outside the function will cause an error
+# print(name)     # Uncommenting this line will result in a NameError
+```
