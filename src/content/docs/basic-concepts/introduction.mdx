@@ -15,7 +15,136 @@ Syntax refers to a set of rules that governs the structure of a programming lang
 >
 >https://en.wikipedia.org/wiki/Syntax_(programming_languages)
 >
+> 
 
 
 
+## First Python Program
+
+Let's write our first Python program, that prints "Hello, World" to the console.
+We'll cover how to run Python in two different modes.
+
+
+
+### Interactive mode 
+
+
+#### Introduction to Python Interactive Shell
+
+The Python interactive shell, also known as the Python REPL (Read-Eval-Print Loop), allows you to execute Python code in real-time.
+It is a very powerful way to test out new ideas or inspect modules and packages (remember help(x)).
+
+Here's the step to follow before using Python interactive shell:
+
+**1. Open a Terminal or CMD**
+
+- On Windows, you can search for `cmd` and `powershell`
+
+- On macOS or Linux, open the Terminal application.
+
+**2. Start Python:**
+
+You should see a prompt that looks like this:
+
+```py
+Python 3.x.x (default, ... ) 
+[GCC ...] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+```
+
+#### Using the interactive shell
+
+
+
+```py
+Python 3.x.x (default, ... ) 
+[GCC ...] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>"Hello, World"
+Hello, World
+>>> 
+>>>
+
+```
+
+Now you have written your first Python program.
+
+To exit Python, you can enter `exit()`, `quit()`, or select `Ctrl-Z`.
+
+
+### Script mode
+
+Python is usually run in script mode. This is a common way to run Python programs, especially for larger projects or when you want to execute a series of commands at once.
+
+#### Steps to run Python in script mode 
+
+**1. Create Python script:**
+
+  
+    - Use a text editor or an Integrated Development Environment (IDE) to write your Python code.
+    - Save the file with a .py extension. For example, you might create a file named script.py.
+
+**2. Open a Terminal or Command Prompt:**
+
+    - On Windows, you can use Command Prompt or PowerShell.
+    - On macOS or Linux, open the Terminal application.
+
+**3. Navigate to the Directory:**
+
+    - Use the cd command to change to the directory where your Python script is located. For example:
+
+    ```sh 
+      cd path/to/your/script
+    ```
+
+**4. Run the Script:**
+
+    - Use the python or python3 command followed by the name of your script to run it. 
+    For example:
+
+    ```sh 
+      python greeting.py
+    ```
+
+    or 
+
+    ```sh 
+      python3 greeting.py
+    ```
+
+    The output of the script will be displayed in the terminal. For the example above, you would see:
+
+    ```
+      Hello, Alice!
+    ```
+## Indentation
+
+
+Python uses whitespace indentation, rather than curly brackets `{}` to define the scope of blocks of code. Indentation in Python can be used to group related statements together. Curly braces can be used to create functions, control statements, and classes.
+
+
+
+**In simple Term**
+> 
+> It's a space added at the beginning of a code line. 
+> Identifying a block of code
+>
+> The recommended indent size is four spaces.
+>
+
+
+## Comments
+
+Comments are ignored by the Python interpreter, meaning they do not affect the execution of the program.
+Everything after hash `#` character is ignored by the interpreter
+
+```py title="Example to comments"
+  
+  # This is comment
+  x = 10
+  print(x) # output: 10
+```
 
