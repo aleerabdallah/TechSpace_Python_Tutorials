@@ -5,3 +5,96 @@ slug: basic-concepts/intro-to-data-types
 sidebar:
   order: 2
 ---
+
+
+In Python, data types are classifications that specify the type of data a variable can hold. Understanding data types is fundamental to programming in Python, as they determine what operations can be performed on the data and how the data is stored in memory. Here’s an introduction to the most commonly used data types in Python:
+
+
+
+## 1. Basic Data Types
+
+### Numeric Types
+
+#### Integers 
+
+Whole numbers, both positive and negative, without a decimal point.
+
+```py title="example of int data type"
+  x = 10
+  y = -5
+```
+
+#### Float-Point Numbers
+Numbers that contain a decimal point.
+
+```py title="example of float data type"
+  pi = 3.14
+  temperature = -10.5
+
+```
+
+#### Complex Numbers
+
+Numbers with a real and imaginary part, represented as a + bj, where a is the real part and b is the imaginary part.
+
+```py title="example of complex data type"
+  z = 2 + 3j
+
+```
+
+### Boolean Type
+Booleans represent one of two values: True or False. They are often used in conditional statements and logical operations.
+
+```py title="example of bool"
+  is_active = True
+  is_logged_in = False
+
+```
+
+### String Type
+
+Strings are sequences of characters enclosed in single quotes ('), double quotes ("), or triple quotes (''' or """ for multi-line strings).
+
+```py title="example of str"
+  name = "Alice"
+  greeting = 'Hello, ' + name
+
+```
+
+## 2. Complex Data Types
+
+### List 
+Ordered, mutable collections of items. Lists can contain mixed data types.
+
+```py 
+  fruits = ["apple", "banana", "cherry"]
+
+```
+
+### Tuple
+Ordered, immutable collections of items. Like lists, tuples can also contain mixed data types.
+
+```py 
+  coordinates = (10.0, 20.0)
+```
+
+### Directory
+Dictionaries are unordered collections of key-value pairs. Keys must be unique and immutable, while values can be of any data type.
+
+```py 
+  person = {
+    "name": "Alice",
+    "age": 30,
+    "is_student": False
+}
+
+```
+
+### Set
+
+Sets are unordered collections of unique items. They are useful for membership testing and eliminating duplicate entries.
+
+```py 
+unique_numbers = {1, 2, 3, 4, 5}
+
+```
