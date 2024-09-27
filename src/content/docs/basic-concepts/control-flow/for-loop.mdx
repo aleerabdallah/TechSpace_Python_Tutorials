@@ -1,0 +1,78 @@
+---
+title: for loop
+description: This is an Introduction to Python Syntax
+slug: control-flow/for-loop
+sidebar:
+  order: 17
+---
+import { Aside } from "@astrojs/starlight/components";
+
+The for loop is used to iterate over a sequence (like a list, tuple, dictionary, set, or string). It iterates over items in the order they appear in the sequence. 
+
+<Aside title="note" type="note">
+  The loop variable takes on each of the values in the sequence
+</Aside>
+
+
+
+## `for` loop Syntax:
+
+```py 
+
+for item in sequence:
+    print(item)
+
+
+
+```
+
+## Examples
+
+Example:
+
+
+```py
+# using a for loop to iterate over a sequence of characters
+
+characters = “Python”
+
+for char in characters:
+    print(char)
+
+```
+
+
+Example:
+
+```py 
+# Using a for loop to iterate over a list
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(fruit)
+
+
+```
+
+## using built-in `range()` function
+
+A built-in range function returns a sequence of numbers based on the given arguments
+
+`range(start, stop, step)`
+
+default:
+
+**start**: defaults to `0`
+
+**stop**: required `*`
+
+**step**: defaults to `1`
+
+```py 
+
+for i in range(6):
+    print(i)
+  
+
+```
+
+
