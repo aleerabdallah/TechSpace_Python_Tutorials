@@ -19,3 +19,10 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+
+# 
+
+for-loop.mdx
+while-loop.mdx 
+break-continue.mdx
