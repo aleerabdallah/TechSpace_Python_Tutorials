@@ -1,0 +1,55 @@
+---
+title: introduction
+description: This is an Introduction to Python Syntax
+slug: file-handling/intro
+
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+
+Here I'll put some introduction to File
+
+
+
+## Opening a File:
+
+
+The first thing to do when working with files is to open a file, which something you normally do when you want to read the content of a file.
+
+Python has a `open()` function built into 
+You can open a file using the `open()` function. The syntax is:
+
+Open file and return a corresponding file object. If the file cannot be opened, an `OSError` is raised
+
+
+## syntax:
+
+```py 
+open(file)
+
+```
+
+file is a path-like object giving the pathname (absolute or relative to the current working directory) of the file to be opened.
+
+### Example
+
+```py 
+
+file = open("names.txt")
+
+```
+
+
+
+
+>
+>  If the file is not found, 
+>  `FileNotFoundError:` exception is raised with - No such file or directory: 'welcome.txt' message
+>
+
+
+
+## Closing a file
+
+You hould always close a file after opening it, either for read, write or modification.
